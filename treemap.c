@@ -78,12 +78,23 @@ void eraseTreeMap(TreeMap * tree, void* key)
 
 Pair * searchTreeMap(TreeMap * tree, void* key)
 {
-  if(tree == NULL)
+  tree->current = tree->root;
+  if(tree->root == NULL)
   {
     return NULL;
   }
+  while(tree->current != NULL)
+  {
+    if(is_equal(tree, tree->current->pair->key, key))
+    {
+      return(tree->current->pair);
+    }
+    if(tree->lower_that(tree->current->pair->kay))
+    {
+      tree->curretn = tree->current->right;
+    }
+  }
 }
-
 
 Pair * upperBound(TreeMap * tree, void* key)
 {
