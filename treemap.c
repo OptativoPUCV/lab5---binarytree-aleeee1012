@@ -91,7 +91,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     }
     if(tree->lower_that(tree->current->pair->key))
     {
-      tree->curretn = tree->current->right;
+      tree->current = tree->current->right;
     }
   }
 }
