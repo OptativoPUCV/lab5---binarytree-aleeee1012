@@ -52,8 +52,9 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
 {
   if(searchTreeMap(tree, key) != NULL)
   {
-    printf("a");
+    
   }
+  return;
 }
 
 TreeNode * minimum(TreeNode * x)
