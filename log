@@ -46,3 +46,19 @@ treemap.c:85:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 b4ff267
+Thu 20 Apr 2023 05:01:30 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:81:14: error: ‘NUL’ undeclared (first use in this function); did you mean ‘NULL’?
+   81 |   if(tree == NUL)
+      |              ^~~
+      |              NULL
+treemap.c:81:14: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:85:1: error: control reaches end of non-void function [-Werror=return-type]
+   85 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f10273f
