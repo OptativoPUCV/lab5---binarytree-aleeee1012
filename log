@@ -277,3 +277,9 @@ treemap.c:60:7: error: expected ‘(’ before ‘{’ token
       |       (
 Compilation failed
 11757be
+Fri 21 Apr 2023 11:37:56 PM UTC: 
+ treemap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+ tests:  13|5
+total_score: 25/70
+b2718b1
