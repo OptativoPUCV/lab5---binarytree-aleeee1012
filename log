@@ -266,3 +266,14 @@ Fri 21 Apr 2023 11:18:03 PM UTC:
  tests:  11|6
 total_score: 15/70
 2bedafd
+Fri 21 Apr 2023 11:25:37 PM UTC: 
+ treemap.c | 34 +++++++++-------------------------
+ 1 file changed, 9 insertions(+), 25 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:60:7: error: expected ‘(’ before ‘{’ token
+   60 |       {
+      |       ^
+      |       (
+Compilation failed
+11757be
