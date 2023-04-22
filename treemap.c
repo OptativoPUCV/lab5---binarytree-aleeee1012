@@ -207,10 +207,14 @@ Pair * upperBound(TreeMap * tree, void* key)
 Pair * firstTreeMap(TreeMap * tree)
 {
   TreeNode *node;
-  node = tree->root;
   if(tree == NULL || tree->root == NULL)
   {
     return NULL;
+  }
+  node = tree->root;
+  while(node->left != NULL)
+  {
+    node = node->left;
   }
   tree->current = node;
   return node->pair;
