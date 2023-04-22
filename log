@@ -307,3 +307,20 @@ Sat 22 Apr 2023 02:37:53 AM UTC:
  tests:  18|3
 total_score: 40/70
 721f982
+Sat 22 Apr 2023 02:43:47 AM UTC: 
+ treemap.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:189:15: error: too few arguments to function ‘tree->lower_than’
+  189 |     } else if(tree->lower_than(current->pair->key))
+      |               ^~~~
+treemap.c:182:13: error: variable ‘uNode’ set but not used [-Werror=unused-but-set-variable]
+  182 |   TreeNode *uNode = NULL;
+      |             ^~~~~
+treemap.c:197:1: error: control reaches end of non-void function [-Werror=return-type]
+  197 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b86cfd9
