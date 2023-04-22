@@ -450,3 +450,9 @@ treemap.c:230:14: error: ‘TreeNode’ has no member named ‘current’
       |              ^~
 Compilation failed
 765f3b8
+Sat 22 Apr 2023 03:02:22 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  24|1
+total_score: 55/70
+1f39f3d
