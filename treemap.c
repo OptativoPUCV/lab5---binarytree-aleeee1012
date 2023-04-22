@@ -222,5 +222,10 @@ Pair * firstTreeMap(TreeMap * tree)
 
 Pair * nextTreeMap(TreeMap * tree)
 {
-  return NULL;
+  TreeNode *node;
+  if(tree == NULL || tree->root == NULL)
+  {
+    return NULL;
+  }
+  return tree->current == NULL ? NULL : tree->current->pair;
 }
