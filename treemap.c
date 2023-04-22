@@ -210,7 +210,8 @@ Pair * firstTreeMap(TreeMap * tree)
   {
     return NULL;
   }
-
+  tree->current = node;
+  return node->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree)
