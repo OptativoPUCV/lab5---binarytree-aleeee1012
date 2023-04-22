@@ -222,10 +222,19 @@ Pair * firstTreeMap(TreeMap * tree)
 
 Pair * nextTreeMap(TreeMap * tree)
 {
-  //TreeNode *node;
+  TreeNode *node;
   if(tree == NULL || tree->root == NULL)
   {
     return NULL;
+  }
+  node = node->parent;
+  if(node->right != NULL)
+  {
+    node = node->right;
+    while(node->left != NULL)
+    {
+      node = node->left;
+    }
   }
   return tree->current == NULL ? NULL : tree->current->pair;
 }
