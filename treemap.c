@@ -223,6 +223,7 @@ Pair * firstTreeMap(TreeMap * tree)
 Pair * nextTreeMap(TreeMap * tree)
 {
   TreeNode *node;
+  //TreeNode *parent;  
   if(tree == NULL || tree->root == NULL)
   {
     return NULL;
@@ -235,6 +236,7 @@ Pair * nextTreeMap(TreeMap * tree)
     {
       node = node->left;
     }
+    tree->current = node;
   }
   return tree->current == NULL ? NULL : tree->current->pair;
 }
