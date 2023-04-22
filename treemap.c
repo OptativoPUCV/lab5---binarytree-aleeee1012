@@ -206,6 +206,7 @@ Pair * upperBound(TreeMap * tree, void* key)
 
 Pair * firstTreeMap(TreeMap * tree)
 {
+  TreeNode *node = tree->root;
   if(tree == NULL || tree->root == NULL)
   {
     return NULL;
